@@ -81,6 +81,9 @@ const App = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>My Notes</Text>
+<Text style={styles.headerSubtitle}>
+  Keep your thoughts organized.
+</Text>
 
       <TextInput
         style={styles.input}
@@ -166,6 +169,11 @@ const styles = StyleSheet.create({
     color: 'red',
     fontWeight: 'bold',
   },
+  headerSubtitle: {
+  fontSize: 14,
+  color: '#777',
+  marginBottom: 20,
+},
 });
 
 export default App;
