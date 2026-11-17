@@ -98,6 +98,11 @@ const App = () => {
       />
 
       <Text style={styles.subtitle}>Saved Notes</Text>
+      {notes.length === 0 && (
+  <Text style={styles.emptyMessage}>
+    No notes yet. Add your first note!
+  </Text>
+)}
 
       <FlatList
         data={notes}
@@ -129,6 +134,12 @@ const styles = StyleSheet.create({
     paddingTop: 60,
     backgroundColor: '#fff',
   },
+  emptyMessage: {
+  color: '#888',
+  fontSize: 14,
+  textAlign: 'center',
+  marginTop: 20,
+},
   title: {
     fontSize: 28,
     fontWeight: 'bold',
