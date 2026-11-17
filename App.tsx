@@ -87,7 +87,7 @@ const App = () => {
 
       <TextInput
         style={styles.input}
-        placeholder="Enter your note"
+       placeholder="What's on your mind?"
         value={note}
         onChangeText={setNote}
       />
